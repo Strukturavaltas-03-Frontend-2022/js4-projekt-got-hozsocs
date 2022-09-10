@@ -1,0 +1,142 @@
+body {
+  margin:0;
+  padding:0;
+}
+
+.got__container {
+  width: 100%;
+  height: 100%;
+  
+}
+
+
+.picture__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-self: center;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 70%;
+  background-color: black;
+  background-image: url("../assets/site/mapblue.jpg");
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: auto;
+  box-sizing: border-box;
+}
+
+.picture__container > div {
+width: 12%;
+text-align: center;
+height: 16.67vh;
+cursor:pointer;
+}
+
+.picture__container > div:hover {
+font-size: larger;
+text-decoration: double;
+background-color: rgba(0,0,0,0.5);
+}
+
+.picture__container > div:active {
+  font-size: larger;
+  text-decoration: double;
+  background-color: rgba(179, 64, 64, 0.5);
+  }
+
+.image {
+text-align: center;
+  width: 50px;
+  padding:10%;
+}
+
+aside {
+  float: right;
+  width:29.506vw;
+  color: white;
+  height: 100vh;
+  background-color: black;
+  box-sizing: border-box;
+  padding: 0 1%;
+}
+
+aside > div{
+  
+  height:96vh;
+}
+
+
+.aside__title {
+  text-align: center;
+  text-size-adjust: 400%;
+}
+
+.bigimage {
+padding: 2%;
+width:96%;
+
+}
+
+.image_house {
+  width:30px;
+  float: right;
+  right:2%;
+  padding-right: 10px;
+}
+
+.aside_bigtext {
+
+  text-size-adjust: 200%;
+}
+
+.bio {
+padding-top: 10%;
+  text-align: justify;
+}
+
+.searchgot {
+  
+  width: 20vw;
+  height: 3vh;
+   
+}
+
+.searchgot > * {
+  width:100%;
+}
+
+#searchgot {
+  width:100%;
+  line-height: 170%;
+}
+
+.inputbox {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: fixed;
+  top:90%;
+  height: 5vh;
+  right: 2vw;
+  width: 27vw;
+  padding:0%;
+}
+
+ 
+.arrow {
+  color: white;
+  width: 15%; 
+  float: left;
+  margin-left: 2%;
+  margin-right: 10%;
+  height: 70%;
+  box-sizing: border-box;
+  text-align: center;
+  
+}
+
+.arrow > i{
+  padding: 20%;
+  border: 1px solid  white;
+}

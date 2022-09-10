@@ -1,0 +1,68 @@
+/* 
+A DIZÃJN TERVÃ‰NEK FELVÃZOLÃSA
+
+1. A HTML- Ã©s CSS-kÃ³d nagy vonalakkal tÃ¶rtÃ©nÅ‘ megtervezÃ©se 
+- container tulajdonsÃ¡gai
+- a legnagyobb mezÅ‘ a karakterekkel (grid vagy flexbox)
+- a sidebar elemeinek Ã¶sszegyÅ±jtÃ©se
+- mÃ¡r ekkor Ã¼gyelni arra, hogy reszponzÃ­v mÃ³dszerekkel dolgozzunk
+
+ADATOK LEKÃ‰RÃ‰SE, RENDSZEREZÃ‰SE
+
+2.  SzÃ¼ksÃ©gÃ¼nk van az adatokra, amelyekkel dolgozunk.   
+Milyen mÃ³don kÃ©rjÃ¼k le Å‘ket?
+- A got.json fÃ¡jlbÃ³l az URL Ã©s a fetch segÃ­tsÃ©gÃ©vel 
+- FigyelÃ¼nk az aszinkronitÃ¡sra
+- MegvalÃ³sÃ­tjuk a hibakezelÃ©st (try/catch)
+
+3. RÃ¶gtÃ¶n szÅ±rnÃ¼nk is kell az adatokat, Ã­gy egy filterrel 
+eltÃ¡volÃ­tjuk a JSON tanulmÃ¡nyozÃ¡sa utÃ¡n/segÃ­tsÃ©gÃ©vel a nem Ã©lÅ‘ karaktereket
+
+4. A karaktereket abc-sorrendben kell felsorakoztatni:
+rÃ¶gtÃ¶n ezt a metÃ³dust is megÃ­rjuk: ezt tÃ¶bb mÃ³dszerrel is lehet, esetleg
+figyeljÃ¼nk arra, hogy az angol karakterkÃ©szletet hasznÃ¡ljuk (Intl.Collator)
+
+ADATOK VIZUÃLIS FORMÃBAN TÃ–RTÃ‰NÅ MEGJELENÃTÃ‰SE
+
+5. A cellÃ¡k lÃ©trehozÃ¡sa (Ã¶tletek)
+- template literal
+- appendChild
+- osztÃ¡lylista hozzÃ¡adÃ¡sa
+- setAttribute
+- innerHTML
+
+6. MenjÃ¼nk vÃ©gig a karakterek listÃ¡jÃ¡n egy metÃ³dus segÃ­tsÃ©gÃ©vel, 
+Ã©s Ã­rassuk ki a szÃ¼ksÃ©ges adatokat a dinamikusan generÃ¡lt mezÅ‘kbe
+
+SIDEBAR
+
+(A kÃ¶vetkezÅ‘ pontokat egy vagy tÃ¶bb fÃ¼ggvÃ©nnyel Ã©rdemes megvalÃ³sÃ­tani?
+MiÃ©rt?)
+
+7. Ide a cellÃ¡k lÃ©trehozÃ¡sÃ¡hoz (4.) hasonlÃ³ mÃ³dszerrel beolvassuk a kÃ©pet 
+
+8. A leÃ­rÃ¡s megjelenÃ­tÃ©sÃ©hez az elÅ‘zÅ‘hÃ¶z hasonlÃ³ mÃ³dszert alkalmazunk
+
+9. A hÃ¡zak megjelenÃ­tÃ©sÃ©hez az elÅ‘zÅ‘hÃ¶z hasonlÃ³ mÃ³dszert alkalmazunk
+- Ha hiÃ¡nyzik a hÃ¡z ikonja (feltÃ©telvizsgÃ¡lat), 
+placeholder image elhelyezÃ©sÃ©re lesz szÃ¼ksÃ©g
+
+10. A sidebar-ban akkor jelennek meg az adatok, ha adott kÃ©pre kattintunk, 
+tehÃ¡t egy esemÃ©nykezelÅ‘ segÃ­tsÃ©gÃ©vel hÃ­vjuk meg a fenti fÃ¼ggvÃ©nyeket
+(az aszinkronitÃ¡sra figyeljÃ¼nk)
+
+KERESÃ‰S A KARAKTEREK KÃ–ZÃ–TT
+
+11. Le kell hozzÃ¡ kÃ©rni a karakterek listÃ¡jÃ¡t
+
+12. Hogyan tudjuk megvizsgÃ¡lni, hogy az input mezÅ‘ tartalmÃ¡val megegyezÅ‘ karakternÃ©v
+szerepel a listÃ¡ban?
+- VÃ©gigiterÃ¡lunk az Ã¶sszes elemen, Ã©s elrejtjÃ¼k azokat, 
+amelyek nem felelnek meg a feltÃ©teleknek (keressÃ¼nk metÃ³dust, amely segÃ­t ebben)/
+Ã©s azokat jelenÃ­tjÃ¼k meg, amelyek megfelelnek a feltÃ©telnek
+- AlakÃ­tsuk kisbetÅ±ssÃ©, majd hasonlÃ­tsuk Ã¶ssze Å‘ket (vagy)
+- HasznÃ¡lhatjuk a new RegExp-et, nÃ©zzÃ¼nk utÃ¡na
+
++ ReszponzivitÃ¡s kivitelezÃ©se
+
+*/
